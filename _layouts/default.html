@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jekyll Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href={{ "/assets/css/main.css" | relative_url }}>
+</head>
+<body>
+    <div class="title-area">
+        <a href="/"><img src={{ "/assets/images/logo.png" | relative_url }} class="logo" /></a>
+
+        <h1 class="title">{{ page.title }}</h1>
+        <p class="sub-title">{{ page.description }}</p>
+        <span class="postDate">{{ page.date | date: "%b %-d, %Y" }}</span>
+    </div>
+        {{ content }}
+
+        <footer>
+            <p>Perhaps a bit too flash for a footer, but it'll do.</p>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        </footer>
+
+</body>
+</html> 
